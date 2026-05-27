@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1a1a1a"
+    android:padding="24dp">
+
+    <TextView
+        android:text="Экстренное оповещение"
+        android:textColor="#aaaaaa"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:text="Готово к отправке"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Большая красная кнопка SOS -->
+    <Button
+        android:id="@+id/sos_button"
+        android:text="SOS"
+        android:textSize="42sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:backgroundTint="#cc0000"
+        android:stateListAnimator="@null"/>
+
+    <!-- Голосовая кнопка -->
+    <Button
+        android:id="@+id/voice_button"
+        android:text="🎤 Голос"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#2a2a2a"
+        android:stateListAnimator="@null"/>
+
+    <TextView
+        android:id="@+id/phrase_label"
+        android:text="Кодовое слово: «тревога»"
+        android:textColor="#444444"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"/>
+
+    <!-- Настройки -->
+    <Button
+        android:id="@+id/settings_button"
+        android:text="⚙ Настройки"
+        android:textSize="13sp"
+        android:textColor="#555555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1a1a1a"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>

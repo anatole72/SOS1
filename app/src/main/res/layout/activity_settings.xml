@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a1a"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:text="Настройки"
+            android:textColor="#ffffff" android:textSize="20sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView android:text="Токен бота (от @BotFather)"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_token"
+            android:hint="7123456789:AAFxyz..."
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" android:inputType="text"/>
+
+        <TextView android:text="Chat ID группы (с минусом)"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_chat_id"
+            android:hint="-1003977673041"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" android:inputType="number|numberSigned"/>
+
+        <TextView android:text="Ваше имя"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_name"
+            android:hint="Анатолий"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" android:inputType="textPersonName"/>
+
+        <TextView android:text="Текст сообщения"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_message"
+            android:hint="🚨 ТРЕВОГА! Помогите!"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine" android:minLines="3"/>
+
+        <TextView android:text="Номер для SMS (необязательно)"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_sms_number"
+            android:hint="+380XXXXXXXXX"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" android:inputType="phone"/>
+
+        <TextView android:text="Кодовое слово для голоса"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_voice_phrase"
+            android:hint="тревога"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" android:inputType="text"/>
+
+        <Button android:id="@+id/btn_save"
+            android:text="Сохранить"
+            android:textColor="#ffffff" android:textSize="16sp"
+            android:backgroundTint="#226622"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+</ScrollView>

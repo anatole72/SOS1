@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SOSAlert" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#cc0000</item>
+        <item name="colorPrimaryDark">#990000</item>
+        <item name="colorAccent">#ff4444</item>
+        <item name="android:windowBackground">#1a1a1a</item>
+    </style>
+</resources>
