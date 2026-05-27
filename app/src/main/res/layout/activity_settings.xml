@@ -15,6 +15,54 @@
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"/>
 
+        <TextView android:text="Выберите ситуацию (заполнит голос и текст автоматически)"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/template_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#333333" android:layout_marginBottom="20dp"/>
+
+        <TextView android:text="Или настройте вручную:"
+            android:textColor="#666666" android:textSize="12sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:text="Кодовое слово для голоса"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_voice_phrase"
+            android:hint="тревога / тцк / помогите"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" android:inputType="text"/>
+        <TextView android:text="Скажите это слово — сообщение отправится автоматически"
+            android:textColor="#555555" android:textSize="11sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:text="Текст сообщения"
+            android:textColor="#888888" android:textSize="13sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/et_message"
+            android:hint="🚨 ТРЕВОГА! Помогите!"
+            android:textColor="#ffffff" android:textColorHint="#444444"
+            android:background="#2a2a2a" android:padding="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine" android:minLines="3"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#333333" android:layout_marginBottom="20dp"/>
+
         <TextView android:text="Токен бота (от @BotFather)"
             android:textColor="#888888" android:textSize="13sp"
             android:layout_width="wrap_content" android:layout_height="wrap_content"/>
@@ -45,17 +93,6 @@
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginBottom="16dp" android:inputType="textPersonName"/>
 
-        <TextView android:text="Текст сообщения"
-            android:textColor="#888888" android:textSize="13sp"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        <EditText android:id="@+id/et_message"
-            android:hint="🚨 ТРЕВОГА! Помогите!"
-            android:textColor="#ffffff" android:textColorHint="#444444"
-            android:background="#2a2a2a" android:padding="12dp"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:inputType="textMultiLine" android:minLines="3"/>
-
         <TextView android:text="Номер для SMS (необязательно)"
             android:textColor="#888888" android:textSize="13sp"
             android:layout_width="wrap_content" android:layout_height="wrap_content"/>
@@ -64,17 +101,7 @@
             android:textColor="#ffffff" android:textColorHint="#444444"
             android:background="#2a2a2a" android:padding="12dp"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp" android:inputType="phone"/>
-
-        <TextView android:text="Кодовое слово для голоса"
-            android:textColor="#888888" android:textSize="13sp"
-            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        <EditText android:id="@+id/et_voice_phrase"
-            android:hint="тревога"
-            android:textColor="#ffffff" android:textColorHint="#444444"
-            android:background="#2a2a2a" android:padding="12dp"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp" android:inputType="text"/>
+            android:layout_marginBottom="24dp" android:inputType="phone"/>
 
         <Button android:id="@+id/btn_save"
             android:text="Сохранить"
